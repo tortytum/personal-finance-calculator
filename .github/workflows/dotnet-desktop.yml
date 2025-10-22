@@ -56,8 +56,8 @@ jobs:
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
     env:
-      Solution_Name: src/main/main/main.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      # Test_Project_Path: personal-finance-calculator\src\main\main.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Solution_Name: src/main/main.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      Test_Project_Path: src/main/main.Tests/main.Tests.csproj                # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       
     steps:
     - name: Checkout
