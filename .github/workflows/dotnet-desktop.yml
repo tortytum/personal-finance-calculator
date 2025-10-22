@@ -63,6 +63,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
+        dotnet-version: '8.0.100'  # конкретная версия
+        cache: true 
         fetch-depth: 0
 
     # Install the .NET Core workload
