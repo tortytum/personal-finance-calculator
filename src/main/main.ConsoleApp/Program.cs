@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.Design;
+﻿/using System.ComponentModel.Design;
 using System.Runtime.CompilerServices;
 
 
@@ -19,7 +19,7 @@ class Program
     {
         Console.WriteLine($"Ваша сумма: {sum} ");
         Console.WriteLine("Напишите сумму");
-        while (true) 
+        while (true)
         {
             bool result = int.TryParse(Console.ReadLine(), out int number);
             if (result == true)
@@ -34,8 +34,8 @@ class Program
         Console.WriteLine("1 - баланс");
         Console.WriteLine("2 - список всех операций");
         Console.WriteLine("3 - добавить новую операцию");
-        
-        while (true) 
+
+        while (true)
         {
             Console.WriteLine("Действие:");
             menuItem = Console.ReadLine();
@@ -55,7 +55,7 @@ class Program
                     break;
             }
         }
-        
+
     }
 
     private static void AddOperation()
@@ -70,7 +70,7 @@ class Program
         }
         else if (oper[0] == "-")
         {
-            if(sum >= Convert.ToInt32(oper[1]))
+            if (sum >= Convert.ToInt32(oper[1]))
             {
                 sum -= Convert.ToInt32(oper[1]);
             }
@@ -88,7 +88,7 @@ class Program
 
     private static void AllOperations()
     {
-        if(operations.Count == 0)
+        if (operations.Count == 0)
         {
             Console.WriteLine("Операций не производилось");
         }
@@ -99,13 +99,10 @@ class Program
                 Console.WriteLine(op);
             }
         }
-            
-            
+
+
     }
 }
-
-
-
 
 
 
